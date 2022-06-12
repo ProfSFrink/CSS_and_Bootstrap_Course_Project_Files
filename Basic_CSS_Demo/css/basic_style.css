@@ -1,0 +1,118 @@
+/* Basic CSS */
+/* Advanced Software and Web Developer Diploma - Part V: CSS and Bootstrp */
+/* by Steven Partlow */
+
+body {
+    background-color: #fff; /* Set body background colour to white */ 
+}
+
+h1 {
+    color : rgba(8,141,165,1); /* Set h1 elements to sky blue*/
+    margin-left: 100px; /* Indent in from the left by 100 pixels */
+    text-shadow: 1px .5px 4px rgba(0,0,0, 0.6); /* 1st Number: X-Axis 1 to the right (positive number is right, negative is left */
+                                                   /* 2nd Number: Y-Axis .5 down (postive number is down, Negative is up */
+                                                   /* 3rd Gaussien Blur effect: the number of pixels we want to blur followed by the colour of the shadow,
+                                                   /* the first three digits set the colour to black, the fourth sets the transparency */
+}
+
+.container { /* This is the square that all of our smaller squares are contained in */
+    width: 450px; /* Set container width (X-Axis) by 450 pixels */
+    height: 450px; /* Set container height (y-Axis) by 450 pixels */
+    background-color: #faebd7; /* Set background to white */ 
+    border: 2px solid black; /* Make border 2 pixcels thick, solid black colour */
+    border-radius: 5%;  /* SET CURVE OF THE BORDER 0% = SQUARE 100% = Circle, 
+                           We only have to type this once if all four points of the container are the same */
+}
+
+/*---------------------------------------------------
+    SELECT ALL SQUARES IN THE ARRAY
+---------------------------------------------------*/
+
+.container .squares:nth-child(-n+4) { /*Select all '.squares' in the array */
+    background-image: url("../Images/Icons/icons.png"); /* NOTE: In CSS we use 'URL' instead of 'HREF' like in HTML */
+    color: #fff; /* Set selected square colour to white */
+    float: left; /* This lines the squares up one after the other, not each on there own line*/
+    width: 100px; /* Set selected square width (X-Axis) by 100 pixels */
+    height: 100px; /* Set selected square height (Y-Axis) by 100 pixels */
+    margin: 5px; /* Gap between each square to 5 pixels */
+    border: 1px solid black; /* Each square gets a 1 pixel solid black border */
+    border-radius: 25%; /* Make the borders curved a bit */
+    cursor: pointer; /* Changes the mouse pointer*/
+    transition: transform .5s ease-in-out;
+}
+
+/*----------------------------------------------------
+    SELECT ALL PARAGRAPHS IN THE ARRAY                
+----------------------------------------------------*/
+
+.squares:nth-child(-n+4) p{ /* Select all '.squares' in the array */ 
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Use these fonts in this order of priority */
+    font-size: 0.75cm; /* Set font size */
+    font-weight: 900; /* Set font boldness */ 
+    text-align: center; /* Centre text*/
+    margin: 0; /* No margin */
+    text-shadow: 2px 1px 4px rgba(0,0,0,0.8); /* Make text shadow black, with a transparency */
+}
+
+/*----------------------------------------------------
+    INDIVIUALLY SELECT A SQUARE IN THE ARRAY          
+----------------------------------------------------*/
+
+.squares:nth-child(1) { /* Select square 1 */
+    background-color: #4240ff; /* Set colour of square 1 to blue */
+}
+
+.squares:nth-child(2) { /* Select square 2 */
+    background-color: #ab3fdd; /* Set colour of square 2 to purple */
+}
+
+.squares:nth-child(3) { /* Select square 3 */
+    background-color: #ae1633; /* Set colour of square 3 to red */
+}
+
+.squares:nth-child(4) { /* Select square 4 */
+    background-color: #00b200; /* Set colour of square 4 to green */
+}
+
+/*-----------------------------------------------------
+    HOVER EFFECTS                                      
+-----------------------------------------------------*/
+
+.container .squares:nth-child(-n+4):hover {
+    background-image: url("../Images/Icons/icons2.png");
+    transform: scale(0.5); /* Make square 50% smaller */ 
+    animation-name: race; /* */
+    animation-duration: 2.5s; /* Animation last 2.5 seconds*/
+    animation-iteration-count: infinite; /* Animation loops indefinetly */ 
+    animation-timing-function: cubic-bezier(2.5,.2,.3,2); /* Control speed of animation */
+}
+
+.container .squares:nth-child(1):hover { /* Select square 1 */
+    background: #13b4ff; /* Change square colour when mouse cursor hovers over it */ 
+}
+
+.container .squares:nth-child(2):hover { /* Select square 2 */
+    background: #d861af; /* Change square colour when mouse cursor hovers over it */
+}
+
+.container .squares:nth-child(3):hover { /* Select square 3 */
+    background: #81205f; /* Change square colour when mouse cursor hovers over it */
+}
+
+.container .squares:nth-child(4):hover { /* Select square 4 */
+    background: #77b800; /* Change square colour when mouse cursor hovers over it */
+}
+
+/*------------------------------------------------------
+    ANIMATION EFFECT                                    
+------------------------------------------------------*/
+
+@keyframes race {
+    0%, 100% {
+        translate: translateY(0px); /* Move along the Y-Axis to the start positon*/ 
+        background-image: url("../Images/Icons/icons2.png");
+    }
+    50% {
+        transform: translateY(330px); /* Move 330 pixel down along the Y-Axis to the bottom of the container*/
+    }
+}
