@@ -1,0 +1,79 @@
+/* Menu Rollover CSS */
+/* Advanced Software and Web Developer Diploma - Part V: CSS and Bootstrp */
+/* by Steven Partlow */
+
+body {
+    background: #184352; /* Set page background to this colour  */ 
+}
+
+.wrap { /* CSS Style any element using the '.wrap' class */
+    top: 0; /* Start displaying content from the top-left of the browser */
+    left: 0;
+    margin: auto; /* Allows the browser to automatically set the margin */
+    width: 100%; /* Use the full width of the browser window */
+}
+
+.menu-container { /* CSS Style any element using the '.menu-container' class */
+    top: 0; /* Start displaying content from the top-left of the browser */ 
+    left: 0;
+    /* To the top edge of the screen */
+    width: 100%; /* Use the full width of the browser window */
+    background-color: #184352; /* Set the menu to this background colour */
+}
+
+.menu { /* This wil style the general appearance of the menu */
+    font: bold 12px/18px sans-seif; /* Set the font appearance and size */
+    text-align: center; /* Align the text central */ 
+    display: inline;
+    margin: 0; /* No margin, have the menu in the very corner of the display */
+    padding: 0;
+    list-style: none;
+}
+
+.menu li { /* This will style each menu element */ 
+    color: #B3B3B3; /* Set Text Colour */
+    display: inline-block; /* Display the menu as blocks */
+    margin-right: -2px; /* Set the margin between each element */
+    position: relative; /* The menu elements are sized relative to the size of the browser window */
+    padding: 12px 40px; /* Creates a padding around the text in each element */
+    border: 1px solid #9D9FA2; /* Sets the border colour of each menu element */
+    border-radius: 1.5px; /* Gives us a slightly curved border */
+    background-color: #377593; /* Set the background colour of each element */
+    cursor: pointer; /* Set the mouse cursor to a pointer */
+}
+
+.menu li:hover { /* Sets the style of what happens when we hover the mouse pointer over an element */
+    background-color: #5EAFDF; /* We change both the background and text colour */
+    color: #fff;
+}
+
+.menu li:hover ul { /*  */
+    display: block;
+    opacity: 1;
+    /* While hovered, drop down-menu appears
+       This also avoids a block level bug */
+    visibility: visible ;
+}
+
+.submenu { /* Style the appearnce of the submenu the appears when we hover over 'portolio' */
+    padding: 0;
+    left: 0;
+    position: absolute; /* How the sub menu will appear */
+    top: 43.5px; /* From where in the browser it appears (43.5px down the Y-Axsis) */
+    width: 125.5px; /* 125px right of the X-Axsis */
+    opacity: 0;
+    /* While not being  hovered, drop down-menu disappears
+    This also avoids a block level bug */
+    visibility: hidden;
+}
+
+.submenu li { /* Style how each element of the submenu looks */
+    background-color: #387593; /* We change both the background and text colour */
+    display: block; /* We have the menu display in blocks */
+    color: #B3B3B3;
+}
+
+.submenu li:hover { /* Style how each element of the submenu looks when we hover over it */
+    color: #fff; /* We change both the background and text colour */
+    background-color: #5EAFDF;
+}
