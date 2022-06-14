@@ -1,0 +1,89 @@
+/* Effecting Images with CSS */
+/* Advanced Software and Web Developer Diploma - Part V: CSS and Bootstrap */
+/* by Steven Partlow */
+
+/*=================================================
+GALLERY SECTION ANIMATION
+=================================================*/
+
+P {
+    font-weight: 300; /* Font boldness */
+    line-height: 30px; /* The height of the text */ 
+    padding-bottom: 15px; /* The text will appear 15px up from the bottom of the image*/
+}
+
+.photo {
+    position: relative; /* The position of the photo is relative to the position of the container */
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden; /* Anything that goes beyond the border of the image will be hidden */
+    border-radius: 8px; /* Round the edges of the border */
+    padding: 1px;
+    border: 1px solid #021a40; /* Give a container a 1px thick black border */
+    background-color: #ff0;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+.photo-container { /* Styles the photo container */
+    text-align: center; /* Align the photo container text to the centre */
+    margin: 15px auto; /* Top/Bottom for the first value, Left/Right for the second value */ 
+    width: 300px; /* Set the height and width of he container */
+    height: 169px;
+}
+
+.photo-container img { /* Styles the image within the container */
+    max-width: 100%; /* Allow the images to fill the whole container */
+    width: 300px; /* Display the image do the same height and width of the container */
+    height: 169px;
+}
+
+.photo-overlay { /* Styles the image overlay */
+    color: #fff;
+    position: absolute; /* The overly is positioned where the container is */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center; /* This centre's the text inside the photo */
+    align-items: center;
+    background: rgba(0,0,0,.5); /* Make the overlay transparent so we can see the image underneath */
+}
+
+.white-head { /* Styles the text that appears when the overlay appears */
+    color: #C9BDAA;
+    margin-left: 5%;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+/*===============================================================
+    Photo Overlay Tranistion
+===============================================================*/
+
+.photo-overlay { /* Styles the image overlay transistion */
+    opacity: 0; /* Makes the overlay solid by default */
+    transition: opacity .1s; /* How long the images takes to become transparent */
+    border-radius: 10px; /* Curve the border of the overlay */
+    cursor: pointer; /* Change the mouse cursor to a pointer */
+}
+
+.photo-overlay p { /* Styles the text that appears in the overlay */
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.photo-overlay:hover {
+    opacity: 1; /* Makes the overlay transparent when we hover over it */
+}
+
+.photo img {
+    transition: transform .5s; /* The zoom in effect will take half a second */
+    transform-origin: 50% 50%;
+}
+
+.photo:hover img { /* When we hover over the images we make is larger (zoom in) */
+    transform: scale(1.1); /* Make the image 10% bigger (A zoom in effect) when the mouse hovers over the image */
+}
