@@ -1,0 +1,55 @@
+<!-- Advanced Software and Web Developer Diploma -->
+<!-- Course #5 CSS and Bootstrap: Challenge #2: Create Column utilizinf the <col> tag -->
+<!-- by Steven Partlow-->
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head> <!-- HEAD SECTION -->
+        <meta charset = "utf-8">
+        <title>Challenge #2 - Create column's using the <col> tag</title>
+        <link rel = "stylesheet" href = "./css/challenge_2.css">
+    </head> <!-- END OF HEAD SECTION -->
+    
+    <body> <!-- BODY SECTION -->
+        <table>
+            <caption>Games and Genres</caption>
+            <colgroup>
+                <col>
+                <col span = "1" class = "Tri_Strat">
+                <col span = "1" class = "G_Darius">
+                <col span = "1" class = "Pokemon_Legends">
+            </colgroup>
+            <tr>
+                <td></td>
+                <th scope = "col">Triangle Strategy</th>
+                <th scope = "col">G-Darius</th>
+                <th scope = "col">Pokemon Legends</th>
+            </tr>
+            <tr>
+                <th scope = "row">Genre</th>
+                <td>Turn-based Strategy</td>
+                <td>Shump</td>
+                <td>Monster Catching RPG</td>
+            </tr>
+            <tr>
+                <th scope = "row">Developer</th>
+                <td>ArtDink</td>
+                <td>Taito</td>
+                <td>Game Freak</td>
+            </tr>
+            <tr>
+                <th scope = "row">Publisher</th>
+                <td>Square Enix</td>
+                <td>Init Games</td>
+                <td>Nintendo</td>
+            </tr>
+            <tr>
+                <th scope = "row">Platform</th>
+                <td>Switch</td>
+                <td>Switch/PS4/STEAM</td>
+                <td>Switch</td>
+            </tr>
+        </table>
+
+    </body> <!-- END OF BODY SECTION -->
+</html>
