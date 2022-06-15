@@ -1,0 +1,350 @@
+/* Creating an HTML and CSS Website - Tutorial Video Follow-on */
+/* Advanced Software and Web Developer Diploma - Part V: CSS and Bootstrap */
+/* Author: Steven Partlow */
+
+/*========================================
+    GENERIC STYLES
+========================================*/
+
+html { /* This settings are for compatability with older browsers */
+    font-family: sans-serif; /* The general font appearance and size */
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Webkit settings are for compatability with old browsers */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body { /* Styles the body section */
+    font-size: 14px; /* 14 pixel font size */
+    margin: 0; /* No margin */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.42857143; /* Heigh between each line */
+    color: #333; /* Text colour black */
+    background-color: #fff; /* Background white */
+}
+
+footer, /* Styles the footer and nav sections */
+nav {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 { /* This section sets the font for header tags */
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 { /* Styles <h1> tags */
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #E91C1C;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+h1::after { /* Underlines <h1> tags */
+    display: block;
+    content: "";
+    height: 2px;
+    width: 150px;
+    background: #E91C1C;
+    margin: 5px auto 40px;
+    box-shadow: 5px 2px 3px rgba(0,0,0,0.5);
+}
+
+h2 { /* Styles <h2> tags */
+    line-height: 50px;
+    color: #E91C1C;
+}
+
+h3 { /* Styles <h3> tags */
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+h4 { /* Styles <h4> tags */
+    padding-top: 25px;
+    line-height: 40px;
+    padding-bottom: 0px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+p { /* Styles <p> tags */
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+.text-center { /* Style elements using 'text-center' class */
+    text-align: center;
+}
+
+.heading-padding { /* Style elements using 'heading-padding' class */
+    padding-bottom: 40px;
+}
+
+section { /* Styles any element using the <section> tag */
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.navbar { /* Style elements using 'navbar' class */
+    height: 105px;
+    max-height: 340px;
+    display: block;
+}
+
+.container { /* Style elements using 'container' class */
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-fluid { /* Style elements using 'container-fluid' class */
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row { /* Style elements using 'row' class */
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.clearfix:after,
+.container::after
+.navbar:after {
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+.wrap { /* Style elements using 'wrap' class */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* This ensures that the images cannot render outside of their container
+       without forcing any scrollbars */
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.menu-container { /* Style elements using 'menu-container' class */
+    max-height: 340px;
+    margin: 0% auto;
+    content: " ";
+    /* top: 0;
+    left: 0; */
+    /* postion: absolute; */ /* to the top edge of the screen */
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    /*  background-color: rgba(255, 255, 255, 0.5); */
+}
+
+/*===============================================================================
+    HOME SECTION STYLES
+===============================================================================*/
+
+#home { /* Styles the ID 'home' */
+    background: url(../Images/planets.jpg) no-repeat 50% 50%; /* The background image will not repeat */
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-backface-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 350px; /* This is the spacer before the Main Title Logo */
+    padding-bottom: 500px; /* This is the space after the Main Title Logo */
+    color: #fff;
+}
+
+.head-main { /* Styles the class 'head-main' our home screen logo */
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
+    font-variant: small-caps;
+    color: #fff;
+    letter-spacing: 5pt;
+    word-spacing: 21pt;
+    font-size: 4.5cm;
+    text-align: left;
+    font-family: impact, sans-serif;
+    line-height: 2;
+    font-weight: 900;
+    border: 5px double #fff; /* Creates two lined borders around the text, 5 pixels thick in white */
+    padding: 10px;
+}
+
+.head-sub-main { /* Styles the class 'head-sub-main' */
+    font-size: 23px;
+    font-weight: 500;
+    padding: 50px 20px 10px 20px;
+    text-transform: uppercase;
+}
+
+.head-last { /* Styles the class 'head-last' */
+    font-size: 10px;
+    font-weight: 900;
+    padding: 5px 20px 20px 20px;
+    border: 1px dotted #fff;
+    padding: 5px;
+}
+
+/*=======================================================================
+    CONTACT STYLES
+========================================================================*/
+
+.flex-container { /* Styles the 'flex-container' class*/
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: rgba(100, 65, 0, .3);
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
+}
+
+#contact {
+    background-color: #f5f3f3;
+}
+
+.reservation { /* Styles the 'reservation' class */
+    width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: rgba(100,65,0,.3);
+    box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.1), 1px 2px 10px 0 rgba(0,0,0,0.5);
+}
+
+.reservation h2 { /*  Style any <h2> elements within the 'reservation' class */
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color: #13161B;
+    font-weight: 500;
+    font-size: 1.3.cm;
+    letter-spacing: 0pt;
+    word-spacing: .3pt;
+}
+
+.reservation h2 span { /* Styles anything within <span> tags inside a <h2> element within the 'reservation' class */
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color: #13161B;
+    font-weight: 900;
+    font-size: 1.5cm;
+    font-variant: small-caps;
+    letter-spacing: .4pt;
+    word-spacing: .3pt;
+}
+
+.reservation p { /* Styles any <p> elements within the 'reservation' class */
+    color: #13161B;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.reservation form { /* Styles the contact form within the 'reservation' class */
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8D8E8F;
+    padding: 12px 12px;
+    width: 70%;
+    border: 1px solid #808080;
+    margin: 2% auto;
+    border-radius: 7px;
+    background: rgba(227,222,222);
+    box-shadow: 2px 3px 0px rgba(0, 0, 0, 0.3);
+    font-family: 'Raleway', sans-serif;
+}
+
+.reservation input[type="text"] { /* Styles the input 'text' boxes within the 'reservation' class */
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8D8E8F;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid #090B0D;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090B0D;
+    margin: 10px len;
+    border-radius: 7px;
+    background: #13161B;
+    box-shadow: inset 0px 3px 0px 0x rgba(5, 5, 5, 0.15);
+    font-family: 'Raleway', sans-serif;
+}
+
+.reservation input[type="text"]:hover { /* Styles the input 'text' boxes within the 'reservation' class */
+                                        /* when we hover the mouse cursor over them */
+    box-shadow: 0 0 18px rgba(105,65,0,0.6);
+}
+
+.form-spacer { /* Gives the contact form padding */
+    padding: 30px 39px;
+}
+
+.terms { /* Styles the 'terms' class */
+    margin: 30px 1px 0 0;
+    padding-left: 52px;
+    font-size: 14px;
+    line-height: 5px;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    position: relative;
+    display: inline;
+    float: right;
+}
+
+.terms:hover { /* Styles the 'terms' class when we hover over it */
+    color: orange;
+    text-decoration: underline;
+}
+
+.submit input[type="submit"] { /* Styles the input 'submit' boxes within the 'reservation' class */
+    color: rgb(225,225,225);
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 3%;
+    padding: 7px 0px;
+    width: 25%;
+    font-size: 18px;
+    transition: border-color 0.3% color 0.3s background-color 0.3s;
+    border-radius: 7px;
+    background-color: #797a7b;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+}
+
+.submit input[type="submit"]:hover { /* Styles the input 'submit' boxes within the 'reservation' class */
+    /* when we hover the mouse cursor over them */
+    color: #000;
+    background-color: #8D8E8F;
+    box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5));
+}
+
+/*=======================================================
+    FOOTER STYLES
+=======================================================*/
+
+.footer { /* Styles the 'footer' class */
+    background-color: rgba(100,65,0,.3);
+    color: #000;
+    text-shadow: 2px 2px 8px 0 (0,0,0,0.4);
+    padding: 20px 50px 20px 50px;
+    text-align: right;
+}
