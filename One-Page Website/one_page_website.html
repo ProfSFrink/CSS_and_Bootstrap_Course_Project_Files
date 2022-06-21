@@ -10,8 +10,9 @@
          <link rel = "stylesheet" type = "text/css" href = "one_page_website.css"> <!-- SETTING UP THE CSS NOW SO IT'S READY FOR LATER IN THE COURSE -->
      </head>
 
+     <div id = "home"> <!-- HOME SECTION -->
+
      <body>
-         <h1>Steven's Gaming Blog</h1> <!-- TOP OF PAGE HEADLINE -->
          <nav class = "menu"> <!-- NAV SECTION -->
             <a href = "#home">HOME</a>
             <a href = "#screenshots">SCREENSHOTS</a>
@@ -20,21 +21,25 @@
             <a href = "#contact">CONTACT</a>
          </nav>
 
+         <h1>STEVEN'S GAMING BLOG</h1> <!-- TOP OF PAGE HEADLINE -->
+
          <main>
-            <div id = "home"> <!-- HOME SECTION -->
+  
                 <h2>Triangle Strategy</h2>
 
                 <ul> <!-- DISPLAY GAME INFORMATION IN AN UNORDERED LIST-->
-                    <li><b>DEVELOPER: </b><a href = "https://en.wikipedia.org/wiki/Artdink">Artdink</a></li>
-                    <li><b>PUBLISHER: </b><a href = "https://en.wikipedia.org/wiki/Square_Enix">Square Enix (Japan) </a><a href = "https://en.wikipedia.org/wiki/Nintendo">Nintendo (Worldwide)</a></li>
-                    <li><b>GENRE: </b>Turn-based Strategy RPG</li>
-                    <li><b>RELEASE: </b>4th March 2022</li>
+                    <li>DEVELOPER: <a href = "https://en.wikipedia.org/wiki/Artdink">Artdink</a></li>
+                    <li>PUBLISHER: <a href = "https://en.wikipedia.org/wiki/Square_Enix">Square Enix (Japan) </a><a href = "https://en.wikipedia.org/wiki/Nintendo">Nintendo (Worldwide)</a></li>
+                    <li>GENRE: Turn-based Strategy RPG</li>
+                    <li>RELEASE: 4th March 2022</li>
                 </ul>
                 
-                    <img width = "640" height = "360" src = "./images/triangle-strategy.webp" alt="Boxart Image"> <!-- BOX ART GRAPHIC-->
+                    <div class = "boxart-image">
+                        <img width = "640" height = "360" src = "./images/triangle-strategy.webp" alt="Boxart Image"> <!-- BOX ART GRAPHIC-->
+                    </div>
 
                     <article> <!-- Main Article -->
-                        <h3> Review</h3>
+                        <h3>Review</h3>
                         <p>Triangle Strategy is turn-based strategy RPG developeed by japanese studio Artdink whose recent titles include <a href = "https://en.wikipedia.org/wiki/Octopath_Traveler">Octopath Traveller</a> while that game was a traditional turn-based JRPG, Triangle Strategy is a turn-based strategy RPG in the same vain as <a href = "https://en.wikipedia.org/wiki/Final_Fantasy_Tactics">Final Fantasy Tactics</a> and <a href = "https://en.wikipedia.org/wiki/Fire_Emblem">Fire Emblem</a>. The game utilizes the same HD-2D artstyle that octopath used with character sprites being 2D and the levels themselves being styled in the vain of 3D dioramas.<br> 
                     
                         <br> &emsp; The game is set in on the fictional continent of Norzella, where the game is set thirty yaers after "The Saltiron War" in which the two main kingdoms Aesfrost and Hyzante fought over the scares resources of salt and iron, the war was eventually ended by the kingdom of Glenbrook who helped push Aesfrost back and end the war and negoitate a peace treaty. The game begins with the three kingdom opening a mine as a joint-venture to promote peace between the three kingdoms. However Aesfrost assassins have Dragan the Aesfrost minister overseeing the mine murdered and falsly accuses Gleenbrook of being the perpertrator and Aesfrost invades Gleenbrook. You play as Lord Serenoa Wolfort, heir to house Wolfort one of th three great houses of Glenbrook.<br> 
@@ -46,119 +51,106 @@
 
                     <div id = "screenshots"> <!-- Screenshot Section-->
                         <h2>Screenshots</h2>
-                        <div class = "screenshots-container">
-                            <div class = "screenshots">
-                                <figure> <!-- Screenshot 1 -->
+                        <div class = "media_container">
+
+                            <div class = "screenshots-container">
+                                <div class = "screenshots"> 
+                                    <!-- Screenshot 1 -->
                                     <img src="./images/triangle_strategy_screenshot_1.png" alt="Triangle Strategy Screenshot #1">
-                                    <figcaption>Screenshot 1.</figcaption>
-                                </figure>
+                                    <div class = "screenshot_overlay">
+                                        <h3>Title Screen</h3>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class = "screenshots-container">
-                            <div class = "screenshots">
-                                <figure> <!-- Screenshot 2 -->
+                            <div class = "screenshots-container">
+                                <div class = "screenshots"> 
+                                    <!-- Screenshot 2 -->
                                     <img src="./images/triangle_strategy_screenshot_2.png" alt="Triangle Strategy Screenshot #2">
-                                    <figcaption>Screenshot 2.</figcaption>
-                                </figure>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class = "screenshots-container">
-                            <div class = "screenshots">
-                                <figure> <!-- Screenshot 3 -->
+                            <div class = "screenshots-container">
+                                <div class = "screenshots"> 
+                                    <!-- Screenshot 3 -->
                                     <img src="./images/triangle_strategy_screenshot_3.png" alt="Triangle Strategy Screenshot #3">
-                                    <figcaption>Screenshot 3.</figcaption>
-                                </figure>
+                                 </div>
                             </div>
-                        </div>
 
-                        <div class = "screenshots-container">
-                            <div class = "screenshots">
-                                <figure> <!-- Screenshot 4 -->
+                            <div class = "screenshots-container">
+                                <div class = "screenshots">
+                                    <!-- Screenshot 4 -->
                                     <img src="./images/triangle_strategy_screenshot_4.png" alt="Triangle Strategy Screenshot #4">
-                                    <figcaption>Screenshot 4.</figcaption>
-                                </figure>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class = "screenshots-container">
-                            <div class = "screenshots">
-                                <figure> <!-- Screenshot 5 -->
+                            <div class = "screenshots-container">
+                                <div class = "screenshots">
+                                    <!-- Screenshot 5 -->
                                     <img src="./images/triangle_strategy_screenshot_5.png" alt="Triangle Strategy Screenshot #5">
-                                    <figcaption>Screenshot 5.</figcaption>
-                                </figure>
+                                 </div>
                             </div>
-                        </div>
 
-                        <div class = "screenshots-container">
-                            <div class = "screenshots">
-                                <figure> <!-- Screenshot 6 -->
+                            <div class = "screenshots-container">
+                                <div class = "screenshots">
+                                    <!-- Screenshot 6 -->
                                     <img src="./images/triangle_strategy_screenshot_6.png" alt="Triangle Strategy Screenshot #6">
-                                    <figcaption>Screenshot 6.</figcaption>
-                                </figure>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class = "screenshots-container">
-                            <div class = "screenshots">
-                                <figure> <!-- Screenshot 7 -->
+                            <div class = "screenshots-container">
+                                <div class = "screenshots">
+                                    <!-- Screenshot 7 -->
                                     <img src="./images/triangle_strategy_screenshot_7.png" alt="Triangle Strategy Screenshot #7">
-                                    <figcaption>Screenshot 7.</figcaption>
-                                </figure>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class = "screenshots-container">
-                            <div class = "screenshots">
-                                <figure> <!-- Screenshot 8 -->
+                            <div class = "screenshots-container">
+                                <div class = "screenshots">
+                                    <!-- Screenshot 8 -->
                                     <img src="./images/triangle_strategy_screenshot_8.png" alt="Triangle Strategy Screenshot #8">
-                                    <figcaption>Screenshot 8.</figcaption>
-                                </figure>
+                                 </div>
                             </div>
-                        </div>
 
-                        <div class = "screenshots-container">
-                            <div class = "screenshots">
-                                <figure> <!-- Screenshot 9 -->
+                            <div class = "screenshots-container">
+                                <div class = "screenshots">
+                                    <!-- Screenshot 9 -->
                                     <img src="./images/triangle_strategy_screenshot_9.png" alt="Triangle Strategy Screenshot #9">
-                                    <figcaption>Screenshot 9.</figcaption>
-                                </figure>
+                                 </div>
                             </div>
-                        </div>
 
-                        <div class = "screenshots-container">
-                            <div class = "screenshots">
-                                <figure> <!-- Screenshot 10 -->
+                            <div class = "screenshots-container">
+                                <div class = "screenshots">
+                                    <!-- Screenshot 10 -->
                                     <img src="./images/triangle_strategy_screenshot_10.png" alt="Triangle Strategy Screenshot #10">
-                                    <figcaption>Screenshot 10.</figcaption>
-                                </figure>
+                                </div>
                             </div>
-                        </div>
 
-                        &nbsp;<a href = "#home">Return to top of page</a>
+                        </div>
+                        &nbsp;<div class = "return"><a href = "#home">Return to top of page</a></div>
                     </div>
 
                     <div id = "videos"> <!-- Videos section -->
                         <h2>Videos</h2>
-                        <figure> <!-- Triangle Strategy Final Trailer -->
-                            <iframe width="420" height="315" src="https://www.youtube.com/embed/7nhTJ-Evv_U"></iframe>
-                            <figcaption><b>Final Trailer.</b></figcaption>
-                        </figure>
-                        <figure> <!-- Triangle Strategy Character Trailer #1 Roland GLenbrook -->
-                            <iframe width="420" height="315" src="https://www.youtube.com/embed/0WxFwqgTY8Y"></iframe>
-                            <figcaption><b>Character Trailer 1 - Roland Glenbrook.</b></figcaption>
-                        </figure>
+                        <div class = "media_container">
+                            <div class = "video-container">
+                                <!-- Triangle Strategy Final Trailer -->
+                                    <iframe width="420" height="315" src="https://www.youtube.com/embed/7nhTJ-Evv_U"></iframe>
+                                
+                                <!-- Triangle Strategy Character Trailer #1 Roland GLenbrook -->
+                                    <iframe width="420" height="315" src="https://www.youtube.com/embed/0WxFwqgTY8Y"></iframe>
+                            </div>
+                        </div>
                     </div>
                  </div>
         </main>
 
          <div id = "about"> <!-- ABOUT ME SECTION -->
-            <p>My name is Steven and in addition to being an avid gamer who is a big fan of role-playing games in particular Japanese ones, I also enjoy retro-games and PC strategy games. In addition I enjoy reading science-fiction and fantasy books in particular warhammer but also history books and also reading about retro video games. I am also a softwre developer in training and this website is an ongoing project for the diploma that I am currently studying.</p>  &nbsp;<a href = "#home">Return to top of page</a>
+            <p>My name is Steven and in addition to being an avid gamer who is a big fan of role-playing games in particular Japanese ones, I also enjoy retro-games and PC strategy games. In addition I enjoy reading science-fiction and fantasy books in particular warhammer but also history books and also reading about retro video games. I am also a softwre developer in training and this website is an ongoing project for the diploma that I am currently studying.</p>  &nbsp;<div class = "return"><a href = "#home">Return to top of page</a></div>
         </div>
 
 
-        <section = id "contact">  <!-- CONTACT SECTION -->
+        <div id = "contact">  <!-- CONTACT SECTION -->
             <div class = "contact_form"> 
                 <h1>Contact Me</h1>
                 <p>Fill in the form below to contact me:</p>
@@ -168,10 +160,10 @@
                         Surname: <input type = "text" name = "surname"><br>
                         E-Mail: <input type = "text" name = "email"><br>
                     </form>
-                    <br>&nbsp;<a href = "#home">Return to top of page</a>
+                    <br>&nbsp;<div class = "return"><a href = "#home">Return to top of page</a></div>
                 </div>
             </div>
-        </section>
+        </div> <!-- End of CONTACT SECTION -->
         
         <!-- WEB PAGE FOOTER SECTION-->
         <footer>
