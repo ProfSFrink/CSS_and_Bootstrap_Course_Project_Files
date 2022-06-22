@@ -58,11 +58,11 @@ h2, h3 {
 .menu a.active { /* Add a colour to the active current link */
     background-color: rgb(164, 14, 14);
     color: white;
-  }
+}
 
-  .menu-right { /* Right-Align the 'menu-right' elements */
+.menu-right { /* Right-Align the 'menu-right' elements */
     float: right;
-  }
+}
 
 #about, article { /* Styles the text in the main article */
     font-family: Helvectia, Calibri, sans-serif;
