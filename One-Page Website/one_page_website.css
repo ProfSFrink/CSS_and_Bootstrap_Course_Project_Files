@@ -33,6 +33,11 @@ h2, h3 {
 .menu { /* Styles the background colour of the nav bar */
     background-color: #333;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .menu a { /* Styles the link inside navigaion bar */
