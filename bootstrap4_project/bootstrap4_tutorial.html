@@ -24,13 +24,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item active">
-                <a class="nav-link text-light" href="#">Home</a>
+                <a class="nav-link text-light" href="#home">Home</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link text-light" href="#">Games</a>
+                <a class="nav-link text-light" href="#games">Games</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link text-light" href="#">Updates</a>
+                <a class="nav-link text-light" href="#books">Books</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-light" href="#updates">Updates</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -42,25 +45,24 @@
         </div>
       </nav>
 
-      <div class="container-fluid text-sm-center bg-danger text-light p-5 bg-info"> <!-- bg-light is background color & p-5 is padding -->
+      <div id ="home" class="container-fluid text-sm-center bg-danger text-light p-5 bg-info"> <!-- bg-light is background color & p-5 is padding -->
         <h1 class="display-2">Steven's Hobby Blog</h1>
-        <p class="lead">Opinions on the current games and book i'm consuming</p>
+        <p class="lead">Games and Books</p>
       </div>
 
       <div class="container"> <!-- CONTAINER FOR COLUMNS -->
         <div class="row">
           
           <div class="col-sm"> <!-- FIRST COLUMN -->
-            <img class = "img-fluid" src = "./img/pdx.jpg" alt = "">
+            <img class = "img-fluid" src = "./img/hobby_blog_main.jpg" alt = "">
           </div> <!-- END OF FIRST COLUMN -->
         
           <div class="col-sm"> <!-- SECOND COLUMN -->
         
             <h3>My Hobbies</h3>
-            <p>Located in beautiful Portland, Oregon's Pearl district, our reels have been spinning since 1959.</p>
-            <p>Showing our guests a great time is our passion and seeing their smiles is our pleasure!</p>
-            <p>All of our auditoriums are equipped with 3D&reg; sound systems !</p>
-            <p>Relax in our, extra-wide, plush cushioning recliners. Our seating arrangment is disability friendly &#9855;.</p>
+            <p>My name is Steven and welcome to my hobby blog which will mostly cover the video games that I am currently playing and the books that I am reading.</p>
+            <p>Gaming is my main hobby and has been since I was 7-years old when we got an Amstrad CPC-464 Computer, this also when my love of tech also developed.</p>
+            <p>Reading is my other main hobby with Warhammer fiction being something that I really enjoy at the moement.</p>
           </div> <!-- END OF SECOND COLUMN -->
           
           <div class="col-sm"> <!-- THIRD COLUMN -->
@@ -68,25 +70,70 @@
             <h3>Currently Enjoying:</h3>
             <ul class = "list-group">
               <li class = "list-group-item">
+                <a class = "nav-link-active" href = "a">Triangle Strategy</a>
+              </li>
+              <li class = "list-group-item">
                 <a class = "nav-link-active" href = "a">G-Darius HD</a>
               </li>
               <li class = "list-group-item">
                 <a class = "nav-link-active" href = "a">Total War: Warhammer III</a>
               </li>
-              <li class = "list-group-item">
-                <a class = "nav-link-active" href = "a">Dawn of Fire IV: Throne of Light</a>
-              </li>
+
+              <ul class = "list-group">
+                <li class = "list-group-item">
+                  <a class = "nav-link-active" href = "a">Cthonia's Reckoning</a>
+                </li>
+                <li class = "list-group-item">
+                  <a class = "nav-link-active" href = "a">Dawn of Fire IV: Throne of Light</a>
+                </li>
+                <li class = "list-group-item">
+                  <a class = "nav-link-active" href = "a">HG-101: Unoffical Guide to SMT & Persona</a>
+                </li>
             </ul>
           </div> <!-- END OF THRID COLUMN -->
 
         </div>
       </div> <!-- END OF CONTAINER FOR COLUMNS -->
 
-      <!-- Showtimes -->
+      <!-- GAMES COLUMNS -->
+      <div id = "games" class="container my-5"> <!-- CONTAINER FOR COLUMNS -->
+        <div class="row">
 
-      <!-- /Showtimes -->
+          <div class="col-sm"> <!-- FIRST COLUMN -->
+            <h3>Triangle Strategy</h3>
+          </div> <!-- END OF FIRST COLUMN -->
+            
+          <div class="col-sm"> <!-- SECOND COLUMN -->
+            <h3>G-Darius HD</h3>
+          </div> <!-- END OF SECOND COLUMN -->
+          
+          <div class="col-sm"> <!-- THIRD COLUMN -->
+            <h3>Total War: Warhammer III</h3>
+          </div> <!-- END OF THRID COLUMN -->
+            
+        </div>
+      </div> <!-- END OF CONTAINER FOR GAMES COLUMNS -->
 
-      <div class = "text-center">
+      <!-- BOOKS COLUMNS -->
+      <div id = "books" class="container my-5"> <!-- CONTAINER FOR COLUMNS -->
+        <div class="row">
+
+          <div class="col-sm"> <!-- FIRST COLUMN -->
+            <h3>Cthonia's Reckoning</h3>
+          </div> <!-- END OF FIRST COLUMN -->
+            
+          <div class="col-sm"> <!-- SECOND COLUMN -->
+            <h3>Dawn of Fire IV: Throne of Light</h3>
+          </div> <!-- END OF SECOND COLUMN -->
+          
+          <div class="col-sm"> <!-- THIRD COLUMN -->
+            <h3>Hardocore Gaming 101 Presents: The Unoffical Guide to Shin Megami Tensei and Persona</h3>
+          </div> <!-- END OF THRID COLUMN -->
+            
+        </div>
+      </div> <!-- END OF CONTAINER FOR GAMES COLUMNS -->
+
+      <div id = "updates" class = "text-center">
         <form>
           <h1 class = "text-primary my-5">Sign up for Updates!</h1>
           <div class="mb-3">
