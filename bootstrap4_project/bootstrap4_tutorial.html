@@ -50,7 +50,7 @@
         <p class="lead">Games and Books</p>
       </div>
 
-      <div class="container"> <!-- CONTAINER FOR COLUMNS -->
+      <div class="container my-4"> <!-- CONTAINER FOR COLUMNS -->
         <div class="row">
           
           <div class="col-sm"> <!-- FIRST COLUMN -->
@@ -96,19 +96,34 @@
       </div> <!-- END OF CONTAINER FOR COLUMNS -->
 
       <!-- GAMES COLUMNS -->
+
       <div id = "games" class="container my-5"> <!-- CONTAINER FOR COLUMNS -->
+        
+        <div class="card mb-3">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CURRENT PLAYING</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        
         <div class="row">
 
           <div class="col-sm"> <!-- FIRST COLUMN -->
 
-            <div class="card bg-light" style="width: 18rem;"> <!-- TRIANGLE STRATEGY CARD -->
+            <div class="card bg-secondary" style="width: 18rem;"> <!-- TRIANGLE STRATEGY CARD -->
               <img src="./img/triangle_strategy_box_art.jpg" class="card-img-top" alt="Triangle Strategy Box Art">
-              <div class="card-body bg-secondary">
+              <div class="card-body">
                 <h5 class="card-title">Triangle Strategy</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Turn-based Strategy RPG</h6>
-                <p class="card-text ">A fantastic turn-based strategy RPG by the makers of Octopath Traveler.</p>
-                <a href="https://www.nintendo.co.uk/Games/Nintendo-Switch-games/TRIANGLE-STRATEGY--1923371.html#Overview" target = "_blank" class="btn btn-danger">eShop</a>
-                <a href="https://smile.amazon.co.uk/Project-Triangle-Strategy-Nintendo-Switch/dp/B09HT418NX/ref=sr_1_1?crid=17NF8J80VOTGI&keywords=triangle%2Bstrategy%2Bswitch&qid=1656272836&sprefix=triangle%2Caps%2C74&sr=8-1&th=1" target = "_blank" class="btn btn-light">Amazon</a>
+                <p class="card-text my-">A fantastic turn-based strategy RPG by the makers of Octopath Traveler.
+                  <span class="badge badge-pill bg-info my-2">ARTDINK</span>
+                  <span class="badge badge-pill bg-info">SQUARE-ENIX</span>
+                  <span class="badge badge-pill bg-info">2022</span><br>
+                  <a href="https://www.nintendo.co.uk/Games/Nintendo-Switch-games/TRIANGLE-STRATEGY--1923371.html#Overview" target = "_blank" class="btn btn-danger my-1">eShop</a>
+                  <a href="https://smile.amazon.co.uk/Project-Triangle-Strategy-Nintendo-Switch/dp/B09HT418NX/ref=sr_1_1?crid=17NF8J80VOTGI&keywords=triangle%2Bstrategy%2Bswitch&qid=1656272836&sprefix=triangle%2Caps%2C74&sr=8-1&th=1" target = "_blank" class="btn btn-dark">Amazon</a><br>
+                </p>
               </div>
             </div> <!-- END OF TRIANGLE STRATEGY CARD -->
 
@@ -121,10 +136,14 @@
               <div class="card-body bg-danger">
                 <h5 class="card-title">G Darius HD</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Horizontal Shoot Em Up</h6>
-                <p class="card-text ">A brilliant HD update of the best game in the Darius series. One of the best side-scrolling shooter of all time.</p>
-                <a href="https://www.nintendo.co.uk/Games/Nintendo-Switch-games/G-Darius-HD-2036010.html" target = "_blank" class="btn btn-light">eShop</a>
-                <a href="https://store.playstation.com/en-gb/product/EP8204-CUSA20683_00-GDARIUSHD00000EU" target = "_blank" class="btn btn-primary">PSN</a>
-                <a href="https://store.steampowered.com/app/1640160/GDarius_HD/" class="btn btn-dark" target = "_blank">STEAM</a>
+                <p class="card-text ">A brilliant HD update of the best game in the Darius series. One of the best side-scrolling shooter of all time.<br>
+                  <span class="badge badge-pill bg-info my-2">TAITO</span>
+                  <span class="badge badge-pill bg-info">ININ</span>
+                  <span class="badge badge-pill bg-info">2021</span><br>
+                  <a href="https://www.nintendo.co.uk/Games/Nintendo-Switch-games/G-Darius-HD-2036010.html" target = "_blank" class="btn btn-light my-1">eShop</a>
+                  <a href="https://store.playstation.com/en-gb/product/EP8204-CUSA20683_00-GDARIUSHD00000EU" target = "_blank" class="btn btn-primary">PSN</a>
+                  <a href="https://store.steampowered.com/app/1640160/GDarius_HD/" class="btn btn-dark" target = "_blank">STEAM</a>
+                </p>
               </div>
             </div> <!-- END OF G_DARIUS HD CARD -->
 
@@ -134,13 +153,17 @@
 
             <div class="card bg-light" style="width: 18rem;"> <!-- TOTAL WAR CARD -->
               <img src="./img/total_war_warhammer_3_box_art.jpg" class="card-img-top" alt="Total War: Wahmmer III Box Art">
-              <div class="card-body bg-info">
+              <div class="card-body bg-warning">
                 <h5 class="card-title">Total War: Warhammer III</h5>
                 <h6 class="card-subtitle mb-2 text-muted">4X Grand Strategy Game</h6>
-                <p class="card-text ">The third installment in the Total War: Warhammer series. This game finallly adds chaos daemons to the series.</p>
-                <a href="https://store.steampowered.com/app/1142710/Total_War_WARHAMMER_III/" target = "_blank" class="btn btn-dark">STEAM</a>
-                <a href="https://store.epicgames.com/en-US/p/total-war-warhammer-3" target = "_blank" class="btn btn-primary">EPIC</a>
-                <a href="https://www.xbox.com/en-gb/games/store/total-war-warhammer-iii/9NGGB0GZPB9D" class="btn btn-success" target = "_blank">WINDOWS</a>
+                <p class="card-text ">The third installment in the Total War: Warhammer series. This game finallly adds chaos daemons to the series.<br>
+                  <span class="badge badge-pill bg-info my-2">CREATIVE ASSEMBLY</span>
+                  <span class="badge badge-pill bg-info">SEGA</span>
+                  <span class="badge badge-pill bg-info">2022</span><br>
+                  <a href="https://store.steampowered.com/app/1142710/Total_War_WARHAMMER_III/" target = "_blank" class="btn btn-dark my-1">STEAM</a>
+                  <a href="https://store.epicgames.com/en-US/p/total-war-warhammer-3" target = "_blank" class="btn btn-primary">EPIC</a>
+                  <a href="https://www.xbox.com/en-gb/games/store/total-war-warhammer-iii/9NGGB0GZPB9D" class="btn btn-success" target = "_blank">WINDOWS</a>
+                </p>
               </div>
             </div> <!-- END OF TOTAL WAR CARD -->
 
@@ -154,19 +177,37 @@
         <div class="row">
 
           <div class="col-sm"> <!-- FIRST COLUMN -->
-            <h3>Cthonia's Reckoning</h3>
+
+            <div class="card md-auto" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="./img/cthonias_reckoning_cover_art.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Cthonia's Reckoning</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+
           </div> <!-- END OF FIRST COLUMN -->
             
           <div class="col-sm"> <!-- SECOND COLUMN -->
+            
             <h3>Dawn of Fire IV: Throne of Light</h3>
+
           </div> <!-- END OF SECOND COLUMN -->
           
           <div class="col-sm"> <!-- THIRD COLUMN -->
+
             <h3>Hardocore Gaming 101 Presents: The Unoffical Guide to Shin Megami Tensei and Persona</h3>
+
           </div> <!-- END OF THRID COLUMN -->
             
         </div>
-      </div> <!-- END OF CONTAINER FOR GAMES COLUMNS -->
+
+      </div> <!-- END OF CONTAINER FOR BOOKS COLUMNS -->
 
       <div id = "updates" class = "text-center">
         <form>
