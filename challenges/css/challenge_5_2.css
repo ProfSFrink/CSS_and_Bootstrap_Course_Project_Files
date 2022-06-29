@@ -1,0 +1,11 @@
+/* Advanced Software and Web Developer Diploma */
+/* Course #5 CSS and Bootstrap: Challenge 5.2 */
+/* by Steven Partlow */
+
+footer {
+    text-align: center; /* Challenge 5-2.2-a - Style all text so it is centered */
+    font-weight: bold; /* Challenge 5-2.2-b - Style all text so it is bold */
+    padding: 3px;
+    background-color: darkgoldenrod;
+    color:white;
+}

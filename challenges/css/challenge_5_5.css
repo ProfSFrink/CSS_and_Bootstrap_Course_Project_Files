@@ -1,0 +1,35 @@
+/* Advanced Software and Web Developer Diploma */
+/* Course #5 CSS and Bootstrap: Challenge 5-5 */
+/* by Steven Partlow */
+
+/* Challenge 5-5: Using CSS style your fixed navbar */
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color:beige;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Positon the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change background on mouse over */
+.navbar a:hover {
+    background: black;
+    color: white;
+}
+
+/* Main content */
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}

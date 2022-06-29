@@ -1,0 +1,13 @@
+/* Advanced Software and Web Developer Diploma */
+/* Course #5 CSS and Bootstrap: Challenge 5-3 */
+/* by Steven Partlow */
+
+table th, td{
+    border: 1px solid; /* Challenge 5-3.2-a - Use styling to add a border */
+    width: 100%;
+    padding: 12px; /* Challenge 5-3.2-b - Use styling to add padding */
+}
+
+table th {
+    background-color: brown; /* Challenge 5-3.2-c - Use styling to add a background color to the top-row */
+}

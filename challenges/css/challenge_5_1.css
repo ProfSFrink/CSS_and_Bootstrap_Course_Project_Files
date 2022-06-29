@@ -1,0 +1,15 @@
+/* Advanced Software and Web Developer Diploma */
+/* Course #5 CSS and Bootstrap: Challenge 5.1 */
+/* by Steven Partlow */
+
+.center { /* Challenge 5-1.1 - Use styling to center the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+img {
+    filter: contrast(90%) drop-shadow(8px 8px 10px red); /* Challlenge 5-1.2 - Use styling to apply a filter to the image */
+    border-radius: 15px 5px 15px 5px; /* Challenge 5-1.3 - Use styling to give the image rounded edges */
+}
