@@ -1,0 +1,43 @@
+/* Advanced Software and Web Developer Diploma */
+/* Course #5 CSS and Bootstrap: Challenge 5-8 */
+/* by Steven Partlow */
+
+.container { /* Styles the container for both the image and the overlay */
+    position: relative;
+    width: 50%;
+}
+
+.image { /* Styles how the image appears within the container */
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay { /* Styles the overlay */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0; /* We make the overlay invisable to start with */
+    transition: .5s ease; /* The overlay transistion in over half a second */
+    background-color: rgba(0, 0, 0, 0.75); /* We set the overlay colour to black */
+}
+
+.container:hover .overlay {
+    opacity: 1; /* We make the overlay appear when we mouse over the image */
+}
+
+.text { /* Styles the text that appears in the overlay */
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

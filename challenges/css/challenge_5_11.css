@@ -1,0 +1,26 @@
+/* Advanced Software and Web Developer Diploma */
+/* Course #5 CSS and Bootstrap: Challenge 5-11 */
+/* by Steven Partlow */
+
+body {
+    background-color: tan;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: crimson;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* If the max-width of the screen is less than 600 hundread pixels change font colour to blue*/
+    p {
+        color: blue;
+    }
+}

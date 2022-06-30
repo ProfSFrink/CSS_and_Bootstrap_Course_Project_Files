@@ -1,0 +1,26 @@
+/* Advanced Software and Web Developer Diploma */
+/* Course #5 CSS and Bootstrap: Challenge 5-6 */
+/* by Steven Partlow */
+
+/* Challenge 5.6 - Use CSS to create Two Flexiable width colmuns */
+
+.row {
+    display: flex;
+}
+
+.column { 
+    flex: 50%; /* Challenge 5.6-b - Use CSS to specify the width and height of the column */
+    height: 200px;
+    background-color: lightgrey;
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#prinny_1 p {/* Challenge 5.6-a - Assign a font color to any text written in the columns */
+    color: darkblue;
+}
+
+#prinny_2 p { /* Challenge 5.6-a - Assign a font color to any text written in the columns */
+    color: darkorange;
+}

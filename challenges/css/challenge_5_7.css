@@ -1,0 +1,9 @@
+/* Advanced Software and Web Developer Diploma */
+/* Course #5 CSS and Bootstrap: Challenge 5-7 */
+/* by Steven Partlow */
+
+p:hover { /* Challenge 5.7 - Use CSS to create a hover effect for a <p> element */
+    color: white;
+    background-color: black;
+    border: 1px solid grey;
+}
