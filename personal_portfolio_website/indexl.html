@@ -1,19 +1,76 @@
 <!-- Advanced Software and Web Developer Diploma -->
 <!-- Course #5 CSS and Bootstrap: Final Assignment - Personal Portfolio Website (HTML) -->
+<!-- Started: 01/07/2022 Finished: -->
 <!-- by Steven Partlow -->
+
+<!-- NOTE: IT IS RECOMMENDED THAT WE KEEP THE BASIC SITE LAYOUT PROVIDED -->
+<!-- AN THEN MAKE SMALL ADJUSTMENTS WHERE NEEDED. REMEMBER THAT THIS IS THE -->
+<!-- CSS COURSE SO WE NEED CUSTOMISE THE STYLING OF THE SITE. SEE CSS COMMENTS -->
+
+<!-- CONTENT FOR SITE NEEDED: -->
+<!-- Something different than the provided quote -->
+<!-- Custom Images -->
+<!-- Custom Background Video - DONE -->
+<!-- Links to personnel Email, GitHub, Social Media, LinkedIN, etc -->
 
 <!DOCTYPE html>
 <html lang = "en">
 
-    <head> <!-- HEAD SECTION -->
-        <meta charset = "utf-8">
-        <meta name = "viewport" content = "width=device-width">
+     <!-- HEAD SECTION -->
+    <head>
+        <meta charset = "utf-8"> <!-- Use the UTF-8 Character Set -->
+        <meta name = "viewport" content = "width=device-width"> <!-- To allow us to make adjustments later depending on the size of the display -->
         <title>Steven Partlow's Personal Portfolio Website</title>
-        <link rel = "stylesheet" type = "text/css" href = "./css/portfolio.css">
-    </head> <!-- END OF HEAD SECTION -->
+        <link rel = "stylesheet" type = "text/css" href = "./css/portfolio.css"> <!-- Link to CSS Stylesheet -->
+    </head>
+    <!-- END OF HEAD SECTION -->
     
-    <body> <!-- BODY SECTION -->
+    <!-- BODY SECTION -->
+    <body> 
 
-    </body> <!-- END OF BODY SECTION -->
+        <!-- NAVBAR SECTION -->
+        <div class = "Navbar">
+            <a class = "active" href = "#Home">Home</a>
+            <a href = "#About">About</a> <!-- Link to ABOUT SECTION -->
+            <a href = "#GitHub">GitHub</a> <!-- Link to GITHUB SECTION -->
+            <a href = "#Contact">Contact</a> <!-- Link to CONTACT SECTION -->
+        </div>
+        <!-- END OF NAVBAR SECTION -->
+
+        <!-- Add between the site navbar and the first heading -->
+        <br>
+        <br>
+
+        <!-- Background Video -->
+        <div id = "Home">
+            <video autoplay muted loop id = "Background_Video">
+                <source src = "images/videos/Blurred Video of Scripts Being Typed.mp4" type = "video/mp4">
+                <!-- Display the below message if the browser does not support the VIDEO tag -->
+                Your browser does not supoort HTML5 Video.
+            </video>
+        </div>
+        <!-- End of Background Video -->
+
+        <!-- Video Overlay Text -->
+        <div class = "Video_Overlay_Text">
+            <h1 class = "white-text">Steven Partlow's Portfolio Website</h1>
+            <strong>
+                <p class = "cemter">
+                    <!---- NOTE: WE HAVE TO CUSTOMISE THIS OURSELVES ----->
+                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver. 
+                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or <br>field of battle and command such unswervingly dutiful actors or troops.
+                    </q>
+                    <br> -Joseph Weizenbaum
+                    <br>
+                    <br> My name is Steven Partlow. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br> Thank you for stopping by and enjoy!
+                </p>
+            </strong>
+        </div>
+        <!-- End of Video Overlay Text -->
+
+    </body> 
+    <!-- END OF BODY SECTION -->
 
 </html>
