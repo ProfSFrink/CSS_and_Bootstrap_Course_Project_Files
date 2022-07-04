@@ -45,6 +45,24 @@ p:hover {
     transform: scale(1.01); /* Paragraph elements will increase in size when we hover over them */
 }
 
+/* IMAGE Element Styling */
+img {
+    border-radius: 8px; /* Gives images rounded-edges */
+    max-width: 100%; /* Images will fill there container */
+    height: 340px; /* Set maximum height of all images to 340 pixels */
+    display: block; /* This and the two margin properties below ensure we can centre images */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Screens 576px and smaller will shrink the images down to fit the display */
+@media screen and (max-width: 576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
 .center {
     text-align: center;
 }
@@ -52,6 +70,12 @@ p:hover {
 /* Portfolio Title Text Styling */
 .white-text {
     color: #fff;
+}
+
+/* Styling for Footer Element */
+footer {
+    padding: 2%;
+    background-color: white;
 }
 
 /*** NAVBAR STYLING ***/
@@ -123,4 +147,62 @@ p:hover {
     width: 100%; /* Container with video overlay text fill width of browser */
     padding: 20px; /* Provides a gap between the edge of the window and text */
     position: relative; 
+}
+
+/* ROW and COLUMN Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Will add a scrollbar to the column if the text-overflows the height of the column */
+@media screen and (max-width: 576px) {
+    .Column_1 {
+        overflow: auto;
+    }
+}
+
+.Column_1 {
+    float: left;
+    width: 50%; /* Ensures the column take up half the width of the page */
+    padding: 10px;
+    padding-top: 3%; /* Leaves some space at the top of the columns for our headings */
+    height: 550px; /* Sets the height of the column */
+    background-color: #f2f2f2;
+}
+
+.Column_2 {
+    float: left;
+    width: 50%; /* Ensures the column take up half the width of the page */
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 550px; /* Sets the height of the column */
+    background-color: #4d4d4d;
+}
+
+.Row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* CONTACT FORM STYLING */
+
+input[type=text] {
+    width: 100%; /* Each input uses their maximum width */
+    padding: 12px; /* Adds padding to the actual text boxes */
+    border: 1px solid #ccc; /* Setting a solid border and colour */
+    border-radius: 4px;/* Round the edges of the text box border */
+    box-sizing: border-box; /* Adds a border around the contact form input boxes */
+    margin-top: 6px; /* Adds a margin above each text box */
+    margin-bottom: 16px; /* Adds a margin beneath each text box */
+    resize: vertical; /* Allows the user to resize the text boxes vertically */
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+form {
+    border-radius: 5px; /* Rounds the edges of the contact form */
+    background-color: #f2f2f2;
+    padding: 10px; /* Add padding to the size of 10 pixels around the contact form */
+    font-family: "Trebuchet MS", Optima;
 }
