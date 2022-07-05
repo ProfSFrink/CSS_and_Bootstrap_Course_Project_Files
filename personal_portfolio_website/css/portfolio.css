@@ -53,12 +53,21 @@ a {
 
 /* IMAGE Element Styling */
 img {
+    filter: grayscale(75%);
     border-radius: 8px; /* Gives images rounded-edges */
     max-width: 100%; /* Images will fill there container */
     height: 340px; /* Set maximum height of all images to 340 pixels */
     display: block; /* This and the two margin properties below ensure we can centre images */
     margin-left: auto;
     margin-right: auto;
+}
+
+/* IMAGE element hover effects */
+
+img:hover {
+    filter: grayscale(0%);
+    transition: transform 1s;
+    transform: scale(1.1);
 }
 
 /* Screens 576px and smaller will shrink the images down to fit the display */
@@ -192,7 +201,7 @@ footer {
     width: 50%; /* Ensures the column take up half the width of the page */
     padding: 10px;
     padding-top: 3%; /* Leaves some space at the top of the columns for our headings */
-    height: 550px; /* Sets the height of the column */
+    height: 500px; /* Sets the height of the column */
     background-color: #f2f2f2;
 }
 
@@ -201,7 +210,7 @@ footer {
     width: 50%; /* Ensures the column take up half the width of the page */
     padding: 10px;
     padding-top: 1.9%;
-    height: 550px; /* Sets the height of the column */
+    height: 500px; /* Sets the height of the column */
     background-color: rgb(223, 32, 32);
 }
 
