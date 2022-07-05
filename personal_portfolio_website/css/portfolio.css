@@ -30,7 +30,7 @@ h1:hover {
 
 /* Parargraph element styling */
 p {
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: Tahoma;
     text-align: justify; /* Justify text of paragraph elements */
     letter-spacing: 1px; /* Expands the spacing between letters by 1px */
     font-size: 20px; /* Set font-size to 20px */
@@ -70,16 +70,22 @@ img {
 }
 
 /* List element styling */
-
 ul {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 14pt;
-    list-style-position: inside;
-    list-style-type: square;
+    list-style-type: circle;
 }
 
 li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24pt;
+    font-weight: 500;
     margin: 5px;
+}
+
+li:hover {
+    color: white;
+    background-color: black;
+    transition: transform 1s;
+    transform: scale(1.01);
 }
 
 .center {
@@ -100,7 +106,7 @@ footer {
 /*** NAVBAR STYLING ***/
 .Navbar {
     overflow: hidden; /* Does not show content that goes outside the navbar area */
-    background-color: rgb(118, 10, 10);
+    background-color: rgb(223, 32, 32);
     position: fixed; /* The navbar stays fixed to the top of the browser as we scroll down the page */
     top: 0; /* Positions the navbar at the very top-left of the browser */
     left: 0;
@@ -196,7 +202,7 @@ footer {
     padding: 10px;
     padding-top: 1.9%;
     height: 550px; /* Sets the height of the column */
-    background-color: #c9c5c5;
+    background-color: rgb(223, 32, 32);
 }
 
 .Column_tall {
