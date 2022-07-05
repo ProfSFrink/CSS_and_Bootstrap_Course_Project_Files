@@ -69,6 +69,19 @@ img {
     }
 }
 
+/* List element styling */
+
+ul {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14pt;
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+li {
+    margin: 5px;
+}
+
 .center {
     text-align: center;
 }
@@ -183,7 +196,7 @@ footer {
     padding: 10px;
     padding-top: 1.9%;
     height: 550px; /* Sets the height of the column */
-    background-color: #4d4d4d;
+    background-color: #c9c5c5;
 }
 
 .Column_tall {
