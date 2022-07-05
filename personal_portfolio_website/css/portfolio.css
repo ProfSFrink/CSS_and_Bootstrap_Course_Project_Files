@@ -45,6 +45,12 @@ p:hover {
     transform: scale(1.01); /* Paragraph elements will increase in size when we hover over them */
 }
 
+/* Styling for Anchor elements */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
 /* IMAGE Element Styling */
 img {
     border-radius: 8px; /* Gives images rounded-edges */
@@ -117,7 +123,7 @@ footer {
 
 /* Navbar HOME Button */
 .Navbar a.active {
-    background-color: rgb(0, 0, 83); 
+    background-color: black; 
 }
 
 /*** END OF NAVBAR STYLING ***/
@@ -180,6 +186,11 @@ footer {
     background-color: #4d4d4d;
 }
 
+.Column_tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+
 .Row::after {
     content: "";
     display: table;
@@ -188,6 +199,7 @@ footer {
 
 /* CONTACT FORM STYLING */
 
+/* Styling for input[type=text] sections in the contact form */
 input[type=text] {
     width: 100%; /* Each input uses their maximum width */
     padding: 12px; /* Adds padding to the actual text boxes */
@@ -198,6 +210,29 @@ input[type=text] {
     margin-bottom: 16px; /* Adds a margin beneath each text box */
     resize: vertical; /* Allows the user to resize the text boxes vertically */
     font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/* Styling for the submit buttons */
+input[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/* Hover effect for the submit button */
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.5);
+    transition: transform 1.5s;
 }
 
 form {
