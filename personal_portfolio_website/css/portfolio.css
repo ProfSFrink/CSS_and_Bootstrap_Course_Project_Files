@@ -6,6 +6,8 @@
 /* NOTE: We have to customise the following:
     FONTS, COLORS, VIDEO, HOVER EFFECTS, ANIMATIONS */
 
+
+/* Using a custom font 'GT Walsheim Pro' this is to set it up correctly so we can use it*/
 @font-face {
     font-family: GT Walsheim Pro;
     src: local("GT Walsheim Pro Regular"),local("GTWalsheimProRegular"),url(GTWalsheimProRegular.woff2) format("woff2"),url(GTWalsheimProRegular.woff) format("woff"),url(GTWalsheimProRegular.ttf) format("truetype");
@@ -30,40 +32,64 @@ body {
 /* H1 element styling */
 h1, h2 {
     text-transform: uppercase; /* Make all h1 elements uppercase */
-    font-family: "GT Walsheim Pro Bold", sans-serif; /* Fonts for h1 elements to use */
+    font-family: "GT Walsheim Pro", sans-serif; /* Fonts for h1 elements to use */
     text-align: center; /* Centre h1 elements */
     color: #1a1a1a;
-}
-
-/***** NOTE: WE HAVE TO CUSTOMISE THIS OURSELVES *****/ 
-/* H1 element hover effect */
-h1:hover {
-    transform: scale(1.1); /* Hovering over a h1 element will increase it's size by 1.1 */
-    transition: transform 1s; /* The increase in size will happean over a duration of 1 second */
+    font-size: 28pt;
 }
 
 /* Portfolio Title Text Styling */
+
+/* Styling for the first heading of the title section */
 .first-head {
-    font-size: 28pt;
+    font-size: 32pt;
     font-weight: 700;
-    color: hsla(0, 0%, 100%, 0.95);
+    position: relative; /* This allows us to use the animation */
+    -webkit-animation: moveFirstHead 4s;
+    animation: moveFirstHead 4s;
 }
 
+/* Will move the first heading of the title section in from the left */
+@keyframes moveFirstHead {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+/* Styling for the second heading of the title section */
 .second-head {
     font-size: 91pt;
-    color: hsla(0, 0%, 100%, 0.95);
+    /* Set the colour to 0 hue, 0% saturation, 100% lightness and .95 alpha */
     margin: 10px 0px;
     padding: 29px 0px;
+    position: relative; /* This allows us to use the animation */
+    -webkit-animation: moveSecondHead 4s;
+    animation: moveSecondHead 4s;
 }
 
-.white-text {
-    font-family: "GT Walsheim Pro";
-    color: #fff;
+@keyframes moveSecondHead {
+    from {right: -100vw;}
+    to {right: 0vw;}
 }
 
+/* Styling for the third heading of the title section */
 .third-head {
     text-align: center;
     font-size: xx-large;
+    position: relative; /* This allows us to use the animation */
+    -webkit-animation: moveThirdHead 4s;
+    animation: moveThirdHead 4s;
+}
+
+@keyframes moveThirdHead {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+/* Styling that applies to all three of the above headings */
+.white-text {
+    font-family: "GT Walsheim Pro"; /* Use our custom font */
+    /* Set the colour to 0 hue, 0% saturation, 100% lightness and .95 alpha */
+    color: hsla(0, 0%, 100%, 0.95);
 }
 
 /* Styles anything using the 'center' class such as the footer */
@@ -108,9 +134,10 @@ img {
 /* IMAGE element hover effects */
 
 img:hover {
-    filter: grayscale(0%);
-    transition: transform 1s;
-    transform: scale(1.1);
+    filter: grayscale(0%); /* Hovering over the image will make it full-colour */
+    transition: transform 1.5s; /* The increase in size will take 1.5s */
+    transition-timing-function: ease-in; /* The increase in size will start slow and get faster */
+    transform: scale(1.2); /* Makes the image 20% bigger */
 }
 
 /* Screens 576px and smaller will shrink the images down to fit the display */
@@ -123,21 +150,22 @@ img:hover {
 
 /* List element styling */
 ul { 
-    list-style-type: circle;
+    list-style-type: circle; /* Skills list will use circle bullet points */
 }
 
-li {
+li { /* Indvidual list elements will use the custom font*/
     font-family: "GT Walsheim Pro Regular", 'Times New Roman', Times, serif;
     font-size: 24pt;
     font-weight: 500;
-    margin: 5px;
+    margin: 5px; /* A small margin around each skill point */
 }
 
 li:hover {
+    /* When hovering over each skill they go black and white keeping in theme */
     color: white;
     background-color: black;
-    transition: transform 1s;
-    transform: scale(1.01);
+    transition: transform 1s; /* */
+    transform: scale(1.025);
 }
 
 /* Styling for Footer Element */
@@ -149,7 +177,7 @@ footer {
 /*** NAVBAR STYLING ***/
 .Navbar {
     overflow: hidden; /* Does not show content that goes outside the navbar area */
-    background-color: rgb(223, 32, 32);
+    background-color: rgb(29, 179, 216);
     position: fixed; /* The navbar stays fixed to the top of the browser as we scroll down the page */
     top: 0; /* Positions the navbar at the very top-left of the browser */
     left: 0;
@@ -180,12 +208,42 @@ footer {
 /***** NOTE: WE HAVE TO CUSTOMISE THIS OURSELVES *****/
 /* Navbar hover effect */
 .Navbar a:hover {
-    background-color: darkorange; /* Changes the navbar colour when we hover over it */
+    background-color: rgb(223, 189, 41); /* Changes the navbar colour when we hover over it */
 }
 
 /* Navbar HOME Button */
 .Navbar a.active {
-    background-color: black; 
+    background-color: black;
+    /* Moves the home button in from the left of the screen */
+    -webkit-animation: moveNavActive 3s;
+    animation: moveNavActive 3s;
+}
+
+.Navbar a.middle-links {
+    /* Moves the about and github buttons in from above the screen */
+    -webkit-animation: moveMiddleLinks 3s;
+    animation: moveMiddleLinks 3s;   
+}
+
+.Navbar a.contact-link {
+    /* Moves the contact button in from the right of the screen */
+    -webkit-animation: moveContactLink 3s;
+    animation: moveContactLink 3s;   
+}
+
+@keyframes moveNavActive {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+@keyframes moveMiddleLinks {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+@keyframes moveContactLink {
+    from {right: -300vw;}
+    to {right: 0vw;}
 }
 
 /*** END OF NAVBAR STYLING ***/
@@ -239,18 +297,33 @@ footer {
     background-color: #f2f2f2;
 }
 
+.Column_1:hover { /* Change to black and white when hovered over */
+    background-color: black;
+    color: white;
+}
+
+/* A version of column 1 styling for our contact form so the style does not change when hovered over */
+.Column_1_Custom {
+    float: left;
+    width: 50%; /* Ensures the column take up half the width of the page */
+    padding: 10px;
+    padding-top: 3%; /* Leaves some space at the top of the columns for our headings */
+    height: 500px; /* Sets the height of the column */
+    background-color: #f2f2f2;
+}
+
 .Column_2 {
     float: left;
     width: 50%; /* Ensures the column take up half the width of the page */
     padding: 10px;
     padding-top: 1.9%;
     height: 500px; /* Sets the height of the column */
-    background-color: rgb(223, 32, 32);
+    background-color: rgb(29, 179, 216);
 }
 
 .Column_tall {
     padding-top: 3.5%;
-    height: 450px;
+    height: 500px;
 }
 
 .Row::after {
@@ -260,6 +333,11 @@ footer {
 }
 
 /* CONTACT FORM STYLING */
+
+label {
+    font-family: "GT Walsheim Pro Regular", 'Times New Roman', Times, serif;
+    font-size: 16pt;
+}
 
 /* Styling for input[type=text] sections in the contact form */
 input[type=text] {
@@ -271,7 +349,8 @@ input[type=text] {
     margin-top: 6px; /* Adds a margin above each text box */
     margin-bottom: 16px; /* Adds a margin beneath each text box */
     resize: vertical; /* Allows the user to resize the text boxes vertically */
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: "Helvetica", sans-serif;
+    font-size: 16pt;
 }
 
 /* Styling for the submit buttons */
