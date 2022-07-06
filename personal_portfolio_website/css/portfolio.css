@@ -6,17 +6,31 @@
 /* NOTE: We have to customise the following:
     FONTS, COLORS, VIDEO, HOVER EFFECTS, ANIMATIONS */
 
+@font-face {
+    font-family: GT Walsheim Pro;
+    src: local("GT Walsheim Pro Regular"),local("GTWalsheimProRegular"),url(GTWalsheimProRegular.woff2) format("woff2"),url(GTWalsheimProRegular.woff) format("woff"),url(GTWalsheimProRegular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+    }
+    
+@font-face {
+    font-family: GT Walsheim Pro;
+    src: local("GT Walsheim Pro Bold"),local("GTWalsheimProBold"),url(GTWalsheimProBold.woff2) format("woff2"),url(GTWalsheimProBold.woff) format("woff"),url(GTWalsheimProBold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal
+    }
+
 /*** GENERAL SITE STYLING ***/
 
 /* Body Styling */
 body {
-    margin: 0; /* Displays the site usinf the full width of the browser screen */
+    margin: 0; /* Displays the site using the full width of the browser screen */
 }
 
 /* H1 element styling */
-h1 {
+h1, h2 {
     text-transform: uppercase; /* Make all h1 elements uppercase */
-    font-family: "Trebuchet MS", Optima; /* Fonts for h1 elements to use */
+    font-family: "GT Walsheim Pro Bold", sans-serif; /* Fonts for h1 elements to use */
     text-align: center; /* Centre h1 elements */
     color: #1a1a1a;
 }
@@ -28,9 +42,38 @@ h1:hover {
     transition: transform 1s; /* The increase in size will happean over a duration of 1 second */
 }
 
+/* Portfolio Title Text Styling */
+.first-head {
+    font-size: 28pt;
+    font-weight: 700;
+    color: hsla(0, 0%, 100%, 0.95);
+}
+
+.second-head {
+    font-size: 91pt;
+    color: hsla(0, 0%, 100%, 0.95);
+    margin: 10px 0px;
+    padding: 29px 0px;
+}
+
+.white-text {
+    font-family: "GT Walsheim Pro";
+    color: #fff;
+}
+
+.third-head {
+    text-align: center;
+    font-size: xx-large;
+}
+
+/* Styles anything using the 'center' class such as the footer */
+.center { 
+    text-align: center;
+}
+
 /* Parargraph element styling */
 p {
-    font-family: Tahoma;
+    font-family: "GT Walsheim Pro Regular", sans-serif;
     text-align: justify; /* Justify text of paragraph elements */
     letter-spacing: 1px; /* Expands the spacing between letters by 1px */
     font-size: 20px; /* Set font-size to 20px */
@@ -79,12 +122,12 @@ img:hover {
 }
 
 /* List element styling */
-ul {
+ul { 
     list-style-type: circle;
 }
 
 li {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "GT Walsheim Pro Regular", 'Times New Roman', Times, serif;
     font-size: 24pt;
     font-weight: 500;
     margin: 5px;
@@ -95,15 +138,6 @@ li:hover {
     background-color: black;
     transition: transform 1s;
     transform: scale(1.01);
-}
-
-.center {
-    text-align: center;
-}
-
-/* Portfolio Title Text Styling */
-.white-text {
-    color: #fff;
 }
 
 /* Styling for Footer Element */
