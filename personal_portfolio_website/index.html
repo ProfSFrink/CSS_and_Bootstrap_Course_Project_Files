@@ -8,10 +8,10 @@
 <!-- CSS COURSE SO WE NEED CUSTOMISE THE STYLING OF THE SITE. SEE CSS COMMENTS -->
 
 <!-- CONTENT FOR SITE NEEDED: -->
-<!-- Something different than the provided quote -->
-<!-- Custom Images -->
+<!-- Something different than the provided quote - DONE -->
+<!-- Custom Images -DONE -->
 <!-- Custom Background Video - DONE -->
-<!-- Links to personnel Email, GitHub, Social Media, LinkedIN, etc -->
+<!-- Links to personnel Email, GitHub, Social Media, LinkedIN, etc - DONE -->
 
 <!DOCTYPE html>
 <html lang = "en">
@@ -23,10 +23,8 @@
         <title>Steven Partlow's Personal Portfolio Website</title>
         <!-- Link to Portfolio CSS Stylesheet -->
         <link rel = "stylesheet" type = "text/css" href = "./css/portfolio.css">
-        
+        <!-- Link to Font Awesome CDN CSS Stylesheet for custom icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <script src="https://kit.fontawesome.com/f1c16c9d59.js" crossorigin="anonymous"></script>
     </head>
     <!-- END OF HEAD SECTION -->
     
@@ -80,7 +78,7 @@
             <div class = "Column_1">
                 <h1>About</h1>
                 <p>
-                    I'm a software developer in training living in Ipswich, in the UK. I am currently studying with Pitman Training both at home and on campus, working through the Advanced Software and Web Developer Diploma which is provided by <a href = "https://www.learncodinganywhere.com/">The Tech Academy</a>. When I have finished the course I will be fully trained in HTML, CSS, JavaScript, SQL and C# and hoping to work as a software and web developer. I am also fully trained in Python having completed a <a href = "https://www.udemy.com/course/complete-python-bootcamp/">bootcamp</a> on Udemy, and also have BSc in Software Engineering (2.2) from <a href = "https://www.uos.ac.uk/">Suffolk University</a> which I completed in 2001.<br>
+                    I'm a software developer in training living in Ipswich, in the UK. I am currently studying with Pitman Training both at home and on campus, working through the Advanced Software and Web Developer Diploma which is provided by <a href = "https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>. When I have finished the course I will be fully trained in HTML, CSS, JavaScript, SQL and C# and hoping to work as a software and web developer. I am also fully trained in Python having completed a <a href = "https://www.udemy.com/course/complete-python-bootcamp/" target="_blank">bootcamp</a> on Udemy, and also have BSc in Software Engineering (2.2) from <a href = "https://www.uos.ac.uk/" target="_blank">Suffolk University</a> which I completed in 2001.<br>
                 </p>
                 <p>
                     I currently work for the East of England CO-OP and have over 20+ years experience working in the industry. In my spare time I enjoy running, reading and gaming including building gaming PCs as hobby so I am fully versed in computer hardware.
@@ -92,28 +90,29 @@
         <!-- GITHUB SECTION -->
         <div class = "Row" id = "GitHub">
             <!-- Left-Hand side column -->
-            <div class = "Column_1">
+            <div class = "Column_1 Github">
                 <h1>GitHub</h1>
-                <p>
-                    My coding portfolio can be viewed on my GitHub profile:
-                    <br>
+                <p>My coding portfolio can be viewed on my GitHub profile:</p>
+                    <!-- Link to GitHub Profile -->
                     <p class = "Center">
-                        <a href = "https://github.com/ProfSFrink" target = "_blank">Steven Partlow's GitHub Profile</a>
-                        <br>
-                        <br>
-                        Projects
-                        <br>
-                        <br>
-                        <a href = "https://github.com/ProfSFrink/CSS_and_Bootstrap_Course_Project_Files/blob/master/personal_portfolio_website/index.html">This Portfolio Website</a><br><br>
-                        <a href = "https://github.com/ProfSFrink/Videogame-Database-Project">Python Videogame Database Project</a>
-
-                </p>
+                        <a class = "Github" href = "https://github.com/ProfSFrink" target = "_blank"><i class = "fa fa-github"></i> My GitHub Profile</a>
+                    </p>
+                    <p class = "Center">MY PROJECTS</p>
+                    <!-- Link to Project code -->
+                    <p class = "Center">
+                        <a href = "https://github.com/ProfSFrink/CSS_and_Bootstrap_Course_Project_Files/blob/master/personal_portfolio_website/index.html" target = "_blank"><i class = "fa fa-github"></i> This Portfolio Website</a>
+                    </p>
+                    <!-- Link to Project code -->
+                    <p class = "Center">
+                        <a href = "https://github.com/ProfSFrink/Videogame-Database-Project/blob/main/vg_database.py" target = "_blank"><i class = "fa fa-github"></i> Python Videogame Database Project</a>
+                    </p>
             </div>
             <!-- End of Left-Hand side column -->
 
             <!-- Right-Hand side column -->
             <div class = "Column_2">
                 <h1>Skills</h1>
+                <!-- Display Skills as an unordered list -->
                 <ul>
                     <li>HTML</li>
                     <li>CSS - including Bootstrap</li>
@@ -130,23 +129,29 @@
         <div class = "Row" id = "Contact">
 
             <!-- LinkedIN Image and Link -->
-            <div class = "Column_2 Column_tall">
+            <div class = "Column_2">
+                <br>
+                <br>
+                <br>
                 <a href="https://www.linkedin.com/in/steven-partlow-9375b0236/" target="_blank"><img src = "images/linkedin.png" alt = "LinkedIN Image"></a>
             </div>
 
             <!-- Righ-Hand side contact form -->
-            <div class = "Column_1_Custom Column_tall">
+            <div class = "Column_1_Custom">
                 <h1>Contact</h1>
                 <!-- Connect to our formspree.io account -->
                 <form action = "https://formspree.io/f/mayvzzvw" method = "POST">
+                    <!-- Name Input -->
                     <label>Name:</label>
                         <input type = "text" placeholder = "Place enter your name here">
+                    <!-- Email Input -->
                     <label>Email:</label>
                         <input type = "text" id = "Email" name = "Email" placeholder = " Please enter you email here">
+                    <!-- Message Input -->
                     <label>Message:</label>
                         <input type = "text" id = "Message" name = "Message" placeholder = "Please write your message here">
                         <input type = "submit" value = "SUBMIT">
-                </form>
+                </form> <!-- End of Form -->
             </div>
         </div>
         <!-- END OF CONTACT SECTION -->
